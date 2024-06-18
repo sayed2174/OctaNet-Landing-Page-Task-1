@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8f8869e8;
+    padding: 10px 20px;
+    color: #ecf0f1;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.header-left .site-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+}
+
+.header-right .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-right .menu li {
+    margin-left: 20px;
+}
+
+.header-right .menu li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.header-right .menu li a:hover {
+    color: #3498db;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.intro h1 {
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #666;
+}
+
+.book-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-section.left {
+    justify-content: flex-start;
+}
+
+.book-section.right {
+    justify-content: flex-end;
+}
+
+.book-logo {
+    width: 100px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.book-section.right .book-logo {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.book-details {
+    text-align: left;
+}
+
+.book-section.right .book-details {
+    text-align: right;
+}
+
+.book-details blockquote {
+    font-style: italic;
+    color: #777;
+    margin: 10px 0 0;
+}
+.contact-section {
+    background-color: #ecf0f1;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-details, .contact-form, .map {
+    flex: 1;
+    min-width: 280px;
+    margin: 10px;
+}
+
+.contact-details p, .contact-form label, .contact-form input, .contact-form textarea {
+    margin: 10px 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #3498db;
+}
+
+.map img {
+    width: 100%;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 768px) {
+    .header-right .menu {
+        flex-direction: column;
+    }
+
+    .header-right .menu li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .book-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .book-section.right {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .book-logo {
+        margin: 0 0 10px 0;
+    }
+
+    .book-section.right .book-logo {
+        margin: 0 0 10px 0;
+    }
+
+    .book-details {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details, .contact-form, .map {
+        min-width: 100%;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+}

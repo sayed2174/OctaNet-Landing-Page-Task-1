@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Library System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html"><img src="logo.png" alt="Library Logo" class="logo"></a>
+            <span class="site-name">Famous Library</span>
+        </div>
+        <nav class="header-right">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Welcome to the Famous Library</h1>
+            <p>Discover the world's most renowned books and authors in our extensive collection. Dive into the pages of literary masterpieces and let the words transport you to different worlds.</p>
+        </section>
+        
+        <section id="books">
+            <div class="book-section left">
+               <a href="https://en.wikipedia.org/wiki/The_Great_Gatsby" target="_blank"> <img src="top.jpg" alt="The Great Gatsby" class="book-logo"></a>
+                <div class="book-details">
+                    <h2>The Great Gatsby</h2>
+                    <p>by F. Scott Fitzgerald</p>
+                    <blockquote>"So we beat on, boats against the current, borne back ceaselessly into the past."</blockquote>
+                </div>
+            </div>
+
+            <div class="book-section right">
+                
+                <div class="book-details">
+                   <h2>To Kill a Mockingbird</h2>
+                    
+                    <p>by Harper Lee</p>
+                    <blockquote>"You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it."</blockquote>
+                </div>
+                <a href="https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird" target="_blank"> <img src="mid.jpg" alt="To Kill a Mockingbird" class="book-logo"></a>
+            </div>
+
+            <div class="book-section left">
+                <a href="https://en.wikipedia.org/wiki/Nineteen_Eighty-Four targe" target="_blank"><img src="bottom.jpg" alt="1984" class="book-logo"></a>
+                <div class="book-details">
+                    <h2>1982</h2>
+                    <p>by George Orwell</p>
+                    <blockquote>"War is peace. Freedom is slavery. Ignorance is strength."</blockquote>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-details">
+                    <h3>Our Details</h3>
+                    <p><strong>Address:</strong> 123 Library Lane, Booktown, BK 45678</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> contact@famouslibrary.com</p>
+                    <strong>Follow us on:</strong> 
+                    <div class="icons">
+                       <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-line"></i> </i></a>&nbsp;
+                       <a href="https://www.facebook.com/" target="_blank"><i class="ri-messenger-fill"></i></a>&nbsp;
+                       <a href="https://x.com/?lang=en" target="_blank"><i class="ri-twitter-fill"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <form id="contact-form" action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="map">
+                    <a href="https://www.google.com/maps/place/Kurnool,+Andhra+Pradesh/@15.8118403,77.9986024,13z/data=!3m1!4b1!4m15!1m8!3m7!1s0x3a3546f8ae93d47f:0x33d1bbbe95adcd83!2sAndhra+Pradesh!3b1!8m2!3d15.9128998!4d79.7399875!16zL20vMHl5aA!3m5!1s0x3bb5ddf506b7c6c9:0x19a7ac74f858d6f2!8m2!3d15.8281257!4d78.0372792!16zL20vMDQwbjA0?entry=ttu" target="_blank"><img src="map.png" alt="Library Location"></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2024 Famous Library System. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+    
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const message = document.getElementById('message').value;
+          value = prompt(name+"\n"+email+"\n"+message+"\n"+"type send to continue...").toLowerCase().toString();
+          if(value=="send")
+            alert("Message was sent...");
+          else
+            alert("Message was not sent...")
+          
+        });
+      </script>
+</body>
+</html>
