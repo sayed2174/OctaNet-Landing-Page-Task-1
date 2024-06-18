@@ -1,11 +1,19 @@
 # OctaNet Landing-Page Task-1
+
 **Name :** Sayed Mohammed
+
 **Mail :** 229X5A3373@gprec.ac.in
+
 **College :** G. Pulla Reddy Engineering College
+
 **Company :** OctaNet Services PVT LTD.
+
 **Domain :** Web Development Internship.
+
 **Duration :** 1 Month.
-**To access the landing page click on : https://octanet-task-1.netlify.app/ **
+
+# To access the landing page click on : https://octanet-task-1.netlify.app/ 
+
 **Project :** Landing Page
 # Overview :
     This project is a simple, responsive landing page for the Famous Library System. It highlights some of the most famous books by renowned authors, provides a welcoming introduction, and includes a contact section where users can find the             library's contact details, follow us, send a message, and view a map of the library's location.
