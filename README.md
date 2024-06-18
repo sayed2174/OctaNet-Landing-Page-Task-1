@@ -25,9 +25,9 @@ Logo and Library Name
 Navigation Menu with links to Home, Books, and Contact sections
 # Main Content:
 
-# Intro Section: A welcoming message with an introduction to the library.
-# Books Section: Displays three famous books with images, author names, and notable quotes.
-# Contact Section: Provides the library's contact details, a contact form, and a map image for the location.
+Intro Section: A welcoming message with an introduction to the library.
+Books Section: Displays three famous books with images, author names, and notable quotes.
+Contact Section: Provides the library's contact details, a contact form, and a map image for the location.
 # Footer:
       Simple footer with copyright information.
 # Technologies Used
